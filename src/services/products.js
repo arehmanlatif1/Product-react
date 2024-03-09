@@ -1,5 +1,4 @@
-import React from 'react'
-
+import api from "./apiConfig.js";
 function products() {
   return (
     <div>products</div>

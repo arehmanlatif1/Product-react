@@ -1,9 +1,14 @@
-import React from 'react'
+import axios from "axios";
 
-function apiConfig() {
-  return (
-    <div>apiConfig</div>
-  )
+let apiUrl;
+const apiUrls = {
+  prodution: "www.products-react.heroku.com/api",
+  development: "http://localhost:3000/api",
+};
+
+if (window.location.hostname === "localhost") {
+  apiUrl = apiUrls.development;
+} else {
+  apiUrl = apiUrls.prodution;
 }
-
-export default apiConfig
+export default apiConfig;
