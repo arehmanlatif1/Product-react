@@ -1,10 +1,11 @@
 import axios from "axios";
 
 let apiUrl;
+
 const apiUrls = {
 
   prodution: "www.products-react.com/api",
-  development: "http://localhost:3000/api",
+  development: "http://localhost:3000",
 };
 
 if (window.location.hostname === "localhost") {

@@ -1,20 +1,20 @@
 import api from "./apiConfig.js";
 
-export const getProducts = async => {
+export const getProducts = async () => {
   try{
 
- const response = api.get("/products");
+ const response = await api.get("/products");
  return response.data;
 
   } catch (error) {
-    console.error("Error Getting all Products:", error);
+    console.error("Error Getting all Products:", error, api);
 }
 };
 
 export const getProduct = async (title) => {
   try{
 
-    const response = api.get(`/products/${title}`);
+    const response = await api.get(`/products/${title}`);
     return response.data;
 
   } catch (error) {
@@ -22,10 +22,10 @@ export const getProduct = async (title) => {
 }
 };
 
-export const createProduct = async (title, productData) => {
+export const createProduct = async (productData) => {
   try{
 
-    const response = api.post("/products", productData);
+    const response = await api.post("/products", productData);
     return response.data;
 
   } catch (error) {
@@ -36,7 +36,7 @@ export const createProduct = async (title, productData) => {
 export const editProduct = async (title, productData) => {
   try{
 
-    const response = api.put(`/products/${title}`, productData);
+    const response = await api.put(`/products/${title}`, productData);
     return response.data;
 
   } catch (error) {
@@ -47,7 +47,7 @@ export const editProduct = async (title, productData) => {
 export const deleteProduct = async (title) => {
   try{
 
-    const response = api.delete(`/products/${title}`);
+    const response = await api.delete(`/products/${title}`);
     return response.data;
 
   } catch (error) {

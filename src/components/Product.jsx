@@ -1,14 +1,15 @@
 import { Link } from "react-router-dom";
 
-function Product() {
-    
+function Product({ product }) {
+    console.log(product)
   return (
-    <div>
-        <Link to={`/products/${products._title}`}>
-        <img className="prod-images" src={product.name} alt={product.name} />
+        <Link to={`/products/${product.title}`}>
+          <div>
+            {product.title}
+                <img className="prod-images" src={product.thumbnail} alt={product.name} />
+          </div>
         </Link>
-    </div>
   )
 }
 
-export default Product
+export default Product;
