@@ -7,9 +7,6 @@ function Nav() {
     <NavLink className="nav-home" to="/" >🏚️Home </NavLink>
     <NavLink className="nav-products" to="/Products">🖥️ Product</NavLink>
     <NavLink className="nav-add-product" to="/Add-Product">➕Add New Product</NavLink>
-   
-
-   
    </nav>
   )
 }

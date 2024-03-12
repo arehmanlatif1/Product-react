@@ -1,18 +1,18 @@
 .App {
     text-align: center;
-    background-color: #e8f2f4;
+    background-color: #a7d3d4;
     font-family: "Roboto Sab", sans-serif;
     color: green;
 }
 nav {
-    font-size: 10px;
     background-color: #ffffff;
     width: 90%;
     border-radius: 50px;
-    height: 100px;
     font-size: 30px;
     margin: auto;
-    padding-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: fantasy;
 
 }
 .nav-home {
@@ -20,8 +20,8 @@ nav {
     margin: 30px;
     padding-bottom: 10px;
     text-decoration: none;
-
 }
+
 .nav-products {
     color: green;
     margin: 30px;
@@ -32,20 +32,47 @@ nav {
     margin: 30px;
     text-decoration: none;
 }
+.home{
+    font-family: cursive;
+    font-size: 3rem;
+}
+h3{
+    font-family: cursive;
+}
 button {
     width: 150px;
     height: 50px;
     border-radius: 40px;
     border-color: rgb(108, 108, 109);
     margin: 30px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color: white;
+    color: black;
+    font-size: 1.2rem;
 }
 
 .products-container {
     width: 30px;
     font-size: 30px;
     display: inline-table;
+    font-family: monospace;
+}
+
+.products-container a {
+    text-decoration: none;
+    color: black;
+}
+
+.samples-container {
+    width: 30px;
+    font-size: 30px;
+    display: inline-table;
+    font-family: monospace;
+    display: ruby;
+}
+
+.samples-container a {
+    text-decoration: none;
+    color: black;
 }
 
 .images-container {
@@ -64,7 +91,26 @@ input {
     box-sizing: border-box;
     height: 50px;
     border-radius: 20px;
-    background-color: #296364;
-    color: green;
+    background-color: #D5F0C1;
+    color: #4F6F52;
     justify-content: center;
   }
+
+.prod-images {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+.details {
+    background-color: #c9e9d5;
+    border-radius: 10px;
+    font-family: cursive;
+    color: black;
+    font-size: 1.3rem;
+    
+}
+.details-container h1 {
+    font-size: 30px;
+    font-family: cursive;
+}
