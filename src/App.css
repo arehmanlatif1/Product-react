@@ -55,6 +55,7 @@ button {
     font-size: 30px;
     display: inline-table;
     font-family: monospace;
+    display: ruby;
 }
 
 .products-container a {
