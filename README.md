@@ -1,7 +1,13 @@
+# Front-End Project
 
 ![Front-end](</screenshots/home.png>)
-# Products Catalog
+
+## Products Catalog
 Welcome to the front-end project for the Product Catalog! This application provides a user-friendly interface to interact with a product catalog, featuring a home page with random products, a product page displaying all products, and a page to add new products. Every product have a detail page, in detail page you can edit and delete the products.
+
+<!-- ## Introduction
+
+Explain briefly what your project is about and its purpose. Include information about the external back-end API that your front-end interacts with. -->
 
 ## Feature
 

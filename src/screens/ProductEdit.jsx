@@ -86,12 +86,12 @@ function ProductEdit() {
         <input
           type="number"
           placeholder="rating"
-          name="Give Rating"
+          name="rating"
           value={product.rating}
           onChange={handleChange}
         />
         <input
-          type="type"
+          type="number"
           placeholder="Stock"
           name="stock"
           value={product.stock}

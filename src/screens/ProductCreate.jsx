@@ -8,10 +8,10 @@ function ProductCreate() {
 
     title: "",
     description: "",
-    price: 0,
-    discountPercentage: 0,
-    rating: 0,
-    stock: 0,
+    price: "",
+    discountPercentage: "",
+    rating: "",
+    stock: "",
     brand: "",
     category: "",
     thumbnail: "",
@@ -48,69 +48,60 @@ function ProductCreate() {
     <div className="create-conatainer">
       <h1>Add New Product</h1>
       <form onSubmit={handleSubmit}>
-        <input 
+        <h2>Product Title:<input 
         type="text"
-        placeholder="Product title"
         name="title"
         value={product.title} 
         onChange={handleChange}
-        />
-        <input 
+        /></h2>
+        <h2>Description:<input 
         type="text"
-        placeholder="Write Description"
         name="description"
         value={product.description} 
         onChange={handleChange}
-        />
-        <input 
+        /></h2>
+        <h2>Enter Price:<input 
         type="number"
-        placeholder="Enter Price"
         name="price"
         value={product.price} 
         onChange={handleChange}
-        />
-        <input 
+        /></h2>
+        <h2>Discount Percentage:<input 
         type="number"
-        placeholder="Discount Percentage"
         name="discountPercentage"
         value={product.discountPercentage} 
         onChange={handleChange}
-        />
-          <input 
+        /></h2>
+          <h2>Rating:<input 
         type="number"
-        placeholder="rating"
         name="rating"
         value={product.rating} 
         onChange={handleChange}
-        />
-        <input 
+        /></h2>
+        <h2>Stock Value:<input 
         type="number"
-        placeholder="Stock"
         name="stock"
         value={product.stock} 
         onChange={handleChange}
-        />
-        <input 
+        /></h2>
+        <h2>Brand:<input 
         type="text"
-        placeholder="Brand"
         name="brand"
         value={product.brand} 
         onChange={handleChange}
-        />
-        <input 
+        /></h2>
+        <h2>Category:<input 
         type="text"
-        placeholder="Category"
         name="category"
         value={product.category} 
         onChange={handleChange}
-        />
-        <input 
+        /></h2>
+        <h2>Thumbnails:<input 
         type="text"
-        placeholder="Thumbnail"
         name="thumbnail"
         value={product.thumbnail} 
         onChange={handleChange}
-        />
+        /></h2>
         {/* <input 
         type="text"
         placeholder="Image"
@@ -119,14 +110,14 @@ function ProductCreate() {
         onChange={handleChange}
         /> */}
         <div>
-          <label htmlFor="stock-box">In Stock:
-        <input
+          <label className="stock-tik" htmlFor="stock-box">
+        <h2>In Stock:<input
         id="stock-box"
         type="checkbox"
         name="stock"
         checked={product.stock} 
         onChange={handleCheckboxChange}
-        />
+        /></h2>
           </label>
         </div>
 
