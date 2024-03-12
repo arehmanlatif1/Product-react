@@ -64,7 +64,7 @@ npm start
 ```
 - Open your browser and navigate to http://localhost:3000 to view the application.
 
-## License
+## Note
 ```bash
 Feel free to modify the template to fit your project's specifics. Add or remove sections as needed and provide more details about the technologies used, project structure, or any other relevant information.
 ```
