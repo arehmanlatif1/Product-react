@@ -46,7 +46,7 @@ function ProductCreate() {
 
   return (
     <div className="create-conatainer">
-      <h1>Add New Product</h1>
+      <h1>Add Product</h1>
       <form onSubmit={handleSubmit}>
         <h2>Product Title:<input 
         type="text"

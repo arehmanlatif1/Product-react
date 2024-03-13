@@ -36,6 +36,18 @@ nav {
     font-family: cursive;
     font-size: 3rem;
 }
+.nav-about{
+    color: green;
+    margin: 30px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+.nav-contact {
+    color: green;
+    margin: 30px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
 h3{
     font-family: cursive;
 }

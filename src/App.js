@@ -8,6 +8,8 @@ import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import { useState, useEffect } from "react";
 import { getProducts } from "./services/products.js";
+import About from "./screens/About.jsx";
+import Contact from "./screens/Contact.jsx";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -31,6 +33,8 @@ function App() {
         {/* <Route path="/products/:id" element={<ProductDetail />} /> */}
         <Route path="/add-product" element={<ProductCreate />} />
         <Route path="/products/:title/edit" element={<ProductEdit />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Contact" element={<Contact />} /> 
       </Routes>
     </div>
   );
