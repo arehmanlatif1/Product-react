@@ -5,7 +5,7 @@ let apiUrl;
 const apiUrls = {
 
   prodution: "https://nameless-sierra-38368-0a7a1bc0fdca.herokuapp.com/",
-  development: "http://localhost:3000",
+  development: "https://nameless-sierra-38368-0a7a1bc0fdca.herokuapp.com",
 };
 
 if (window.location.hostname === "localhost") {
